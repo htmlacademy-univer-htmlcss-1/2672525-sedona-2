@@ -542,7 +542,7 @@ select {
   min-width: 170px;
 }
 
-/* ===== Подписка ===== */
+/* Подписка*/
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -651,7 +651,7 @@ select {
   line-height: 26px;
 }
 
-/* ===== Каталог: hero и фильтр ===== */
+/* фильтр  */
 .catalog-hero {
   color: var(--color-white);
   background-color: #6d5a52;
