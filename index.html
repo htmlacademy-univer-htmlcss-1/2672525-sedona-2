@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="preload" href="fonts/ptsans-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ptsans-700.woff2" as="font" type="font/woff2" crossorigin>
@@ -22,14 +23,14 @@
       </nav>
       <ul class="user-nav">
         <li class="user-nav__item">
-          <button class="user-nav__button user-nav__button--search" type="button">
+          <a class="user-nav__button user-nav__button--search" href="#search-modal">
             <span class="visually-hidden">Поиск гостиницы</span>
-          </button>
+          </a>
         </li>
         <li class="user-nav__item">
           <a class="user-nav__link user-nav__link--favorites" href="#">
             <span class="visually-hidden">Избранное:</span>
-            <span class="user-nav__counter">2</span>
+            <span class="user-nav__counter">12</span>
           </a>
         </li>
         <li class="user-nav__item">
@@ -40,79 +41,79 @@
   </header>
 
   <main class="page-main">
-    <section class="hero">
+    <section class="hero hero::after">
       <div class="hero__wrapper">
-        <p class="hero__welcome">Welcome <span class="hero__welcome-sub">to the gorgeous</span></p>
+        <p class="hero__welcome">Welcome <span class="hero__welcome-sub">— to the gorgeous —</span></p>
         <h1 class="hero__title">Sedona</h1>
-        <p class="hero__slogan">Because the Grand Canyon sucks!</p>
+        <p class="hero__slogan">"Because the Grand <br>Canyon sucks!"</p>
       </div>
     </section>
 
     <section class="intro">
-      <h2 class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="intro__text">Рассмотрим причины, по которым Седону любят больше, чем Гранд-Каньон!</p>
+      <h2 class="intro__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+      <p class="intro__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
 
     <section class="reasons">
       <h2 class="visually-hidden">Почему Седона</h2>
       <ul class="reasons__list">
         <li class="reasons__item reasons__item--tile reasons__item--tile-first">
-          <h3 class="reasons__title">Настоящий городок</h3>
-          <p class="reasons__text">Седона — это атмосферное место с туристами, но без столпотворений и суеты.</p>
+          <h3 class="reasons__title">Настоящий<br> городок</h3>
+          <p class="reasons__text">Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
         </li>
         <li class="reasons__item reasons__item--photo-top">
-          <img class="reasons__image" src="#" alt="Улица Седоны с цветами и сувенирными лавками.">
+          <img class="reasons__image" src="images/town.png" alt="Улица Седоны с цветами и сувенирными лавками.">
         </li>
         <li class="reasons__item reasons__item--feature">
-          <h3 class="reasons__title">Небольшая площадь</h3>
-          <p class="reasons__text">Все достопримечательности находятся в шаговой доступности.</p>
+          <h3 class="reasons__title">Небольшая<br> площадь</h3>
+          <p class="reasons__text">Все достопримечательности <br>находятся очень близко</p>
         </li>
         <li class="reasons__item reasons__item--feature reasons__item--feature-accent">
-          <h3 class="reasons__title">Красивая дорога</h3>
-          <p class="reasons__text">Съезд в Седону из Лас-Вегаса — одно из лучших автопутешествий.</p>
+          <h3 class="reasons__title">Красивая <br>дорога</h3>
+          <p class="reasons__text">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
         </li>
         <li class="reasons__item reasons__item--feature">
-          <h3 class="reasons__title">Мало туристов</h3>
-          <p class="reasons__text">Сопоставление идёт в Гранд-Каньон и в Седоне — тихо и спокойно.</p>
+          <h3 class="reasons__title">Мало <br>туристов</h3>
+          <p class="reasons__text">Большинство едет в Гранд <br>Каньон и толпится там</p>
         </li>
         <li class="reasons__item reasons__item--photo-bottom">
-          <img class="reasons__image" src="#" alt="Красные скалы Седоны на закате.">
+          <img class="reasons__image" src="images/bridge.png" alt="Красные скалы Седоны на закате.">
         </li>
         <li class="reasons__item reasons__item--tile reasons__item--tile-last">
-          <h3 class="reasons__title">Там есть мост Дьявола</h3>
-          <p class="reasons__text">Да, он именно так называется. Хотя вас он вряд ли обидит.</p>
+          <h3 class="reasons__title">Там есть<br> мост Дьявола</h3>
+          <p class="reasons__text">Да, по нему можно пройти!<br> Если вы осмелитесь, <br>разумеется</p>
         </li>
       </ul>
     </section>
 
     <section class="comfort">
-      <h2 class="comfort__title">Приезжайте в Седону отдыхать в комфорте и уюте!</h2>
-      <p class="comfort__text">Опытный персонал и качественное обслуживание.</p>
+      <h2 class="comfort__title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+      <p class="comfort__text">Опытный персонал и качественное обслуживание!</p>
       <ul class="comfort__list">
         <li class="comfort__item comfort__item--home">
           <h3 class="comfort__item-title">Жильё</h3>
-          <p class="comfort__item-text">Мы подберём жильё в Седоне, хоть в центре, хоть на окраине.</p>
+          <p class="comfort__item-text">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
         </li>
         <li class="comfort__item comfort__item--food">
           <h3 class="comfort__item-title">Еда</h3>
-          <p class="comfort__item-text">Хотите попробовать местную кухню? Мы знаем лучшие места.</p>
+          <p class="comfort__item-text">Всегда заказывайте <br>топовый фирменный бургер,<br> вы не разочаруетесь!</p>
         </li>
         <li class="comfort__item comfort__item--gifts">
           <h3 class="comfort__item-title">Сувениры</h3>
-          <p class="comfort__item-text">Не забудьте привезти подарки близким — мы расскажем где.</p>
+          <p class="comfort__item-text">Не только китайского,<br> но и настоящего местного<br> производства!</p>
         </li>
       </ul>
     </section>
 
     <section class="interest">
       <h2 class="interest__title">Заинтересовались?</h2>
-      <p class="interest__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
-      <button class="button button--brown button--wide" type="button">Поиск гостиниц в Седоне</button>
+      <p class="interest__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="button button--brown button--wide" href="#search-modal">Поиск гостиницы в Седоне</a>
     </section>
 
     <section class="subscribe">
       <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-      <p class="subscribe__text">Только полезная информация о красивейших местах страны, никакого спама!</p>
+      <p class="subscribe__text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
         <input class="subscribe__input" id="subscribe-email" type="email" name="email" placeholder="Ваш e-mail" required>
@@ -136,16 +137,15 @@
       </ul>
       <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="page-footer__academy" href="https://htmlacademy.ru/">
-        <img src="images/htmlacademy.svg" width="102" height="27" alt="Логотип HTML Academy.">
+        <img src="images/logo_htmlacademy.png" width="102" height="27" alt="Логотип HTML Academy.">
       </a>
     </div>
   </footer>
 
-  <!-- Модальное окно поиска. Чтобы увидеть его, добавьте классу modal модификатор modal--show -->
-  <div class="modal">
+  <div class="modal" id="search-modal">
     <section class="modal__window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <h2 class="modal__title" id="modal-title">Поиск гостиницы в Седоне</h2>
-      <button class="modal__close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+      <a class="modal__close" href="#!"><span class="visually-hidden">Закрыть окно</span></a>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="search-form__field">
           <label class="search-form__label" for="date-in">Дата заезда:</label>
